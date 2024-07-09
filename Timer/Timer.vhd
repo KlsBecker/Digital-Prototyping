@@ -26,7 +26,7 @@ entity Timer is
 end Timer;
 
 architecture Behavioral of Timer is
-  constant PRESCALER : integer := 25000000; -- Constant for 1-second prescaler
+  constant PRESCALER : integer := 50000000; -- Constant for 1-second prescaler
   constant TIMER_MAX : integer := 3599; 	-- Constant for 1-hour timer
 
   signal reset               : std_logic                     := '0';
